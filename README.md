@@ -6,9 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Major Components in the front end :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Front end is a reactive form that allows customer to retrieve and submit data to backend 
+
+  Form component : FeatureRequestFormComponent is angular reactive form which allows the customer to submit feature information
+  
+  BackendService : BackendService is a service that makes api calls using rxjs Behavior Subject 
+
+Backend of the application is hosted on http://localhost:8080 , built using spring boot + mvc . link to repo : https://github.com/ranjithreddy2888/CodingTestBackEnd
 
 ## Build
 
