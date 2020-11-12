@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+.flex-h {
+  display: flex;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  gap: 3px;
+  min-width: 150px;
+}
+
+.dropdown > label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dropdown > select {
+  height: 35px;
+}
+
+.text-field {
+  gap: 3px;
+  min-width: 150px;
+}
+
+.text-field > label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-field > input {
+  height: 35px;
+  padding: 0 5px;
+}
+
+.date-field {
+  gap: 3px;
+  min-width: 150px;
+}
+
+.date-field > label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.date-field > input {
+  height: 35px;
+  padding: 0 5px;
+}
+
+.text-area {
+  gap: 3px;
+  min-width: 150px;
+}
+
+.text-area > label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-area > textarea {
+  height: 70px;
+  padding: 0 5px;
+}
+
+button {
+  height: 35px;
+  padding: 5px;
+}

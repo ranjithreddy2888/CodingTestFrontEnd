@@ -1,0 +1,40 @@
+<main [@slideInOut]="formAnimState" class="flex-v">
+  <header class="flex-h">
+    <span class="heading">Feature Request Form</span>
+  </header>
+  <form [formGroup]="formGroup" class="flex-v flex-1">
+    <div class="dropdown flex-v">
+      <label>Client</label>
+      <select formControlName="clientId">
+        <option *ngFor="let option of clientDDL" [ngValue]="option.id">{{option.label}}</option>
+      </select>
+    </div>
+    <div class="text-field flex-v">
+      <label>Title</label>
+      <input formControlName="title" type="text">
+    </div>
+    <div class="text-area flex-v">
+      <label>Description</label>
+      <textarea formControlName="description"></textarea>
+    </div>
+    <div class="text-field flex-v">
+      <label>Priority</label>
+      <input formControlName="clientPriority" [min]="0" type="number">
+    </div>
+    <div class="date-field flex-v">
+      <label>Date</label>
+      <input formControlName="targetDate" type="date" [min]="minDate">
+    </div>
+    <div class="dropdown flex-v">
+      <label>Product Area</label>
+      <select formControlName="productArea">
+        <option *ngFor="let option of productAreaDDL" [ngValue]="option.id">{{option.label}}</option>
+      </select>
+    </div>
+    <div class="flex-1"></div>
+    <div class="btn-panel flex-h">
+      <button type="button" (click)="saveFeatureRequest()">Save</button>
+      <button type="button" (click)="closeForm()">Cancel</button>
+    </div>
+  </form>
+</main>

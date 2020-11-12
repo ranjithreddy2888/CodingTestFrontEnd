@@ -1,0 +1,24 @@
+<div class="flex-v app">
+  <header class="flex-h">
+    <h2>My App</h2>
+  </header>
+  <main class="flex-v flex-1">
+    <section class="toolbar flex-h">
+      <div class="dropdown flex-v">
+        <label>Client</label>
+        <select [(ngModel)]="selectedClientId" (ngModelChange)="rowData=[]">
+          <option *ngFor="let option of clientDDL" [value]="option.id">{{option.label}}</option>
+        </select>
+      </div>
+      <button type="button" (click)="getFeatureRequests()">Get Data</button>
+      <div class="flex-1"></div>
+      <button routerLink="/addFeatureRequest">Add Feature Request</button>
+    </section>
+    <section class="flex-1">
+      <ag-grid-angular style="width:100%; height: 100%;" class="ag-theme-alpine" [rowData]="rowData"
+                       [columnDefs]="columnDefs">
+      </ag-grid-angular>
+    </section>
+  </main>
+</div>
+<router-outlet></router-outlet>
