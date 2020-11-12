@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Major Components in the front end :
 
-Front end is a reactive form that allows customer to retrieve and submit data to backend 
+Front end of this application is a reactive form that allows customer to retrieve and submit data to backend 
 
   Form component : FeatureRequestFormComponent is angular reactive form which allows the customer to submit feature information
   
